@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&C Cleaning Services | Aylesbury</title>
+    <style>
+        /* Brand colours */
+        :root {
+            --dark-blue: #0A2342;
+            --gold: #D4AF37;
+            --light-text: #FFFFFF;
+            --dark-text: #222222;
+            --light-bg: #F8F9FA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.7;
+            color: var(--dark-text);
+        }
+
+        /* Header Section */
+        header {
+            background: var(--dark-blue);
+            color: var(--light-text);
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+        }
+
+        header h1 {
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            margin-bottom: 0.8rem;
+        }
+
+        header .tagline {
+            font-size: clamp(1.2rem, 2vw, 1.4rem);
+            margin-bottom: 0.5rem;
+            opacity: 0.9;
+        }
+
+        header .sub-heading {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            margin-bottom: 2rem;
+            opacity: 0.85;
+        }
+
+        /* Hero Image */
+        .hero-image {
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 auto 2rem;
+            display: block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Call Button */
+        .btn {
+            display: inline-block;
+            background: var(--gold);
+            color: var(--dark-blue);
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 0.9rem 2.5rem;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.2s ease;
+        }
+
+        .btn:hover {
+            background: #E5C258;
+        }
+
+        /* Sections */
+        section {
+            max-width: 950px;
+            margin: 3.5rem auto;
+            padding: 0 1.8rem;
+            text-align: center;
+        }
+
+        section h2 {
+            color: var(--dark-blue);
+            font-size: 2.2rem;
+            margin-bottom: 1.2rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+        }
+
+        /* Services Grid */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.8rem;
+            margin-top: 2.5rem;
+        }
+
+        .service {
+            background: var(--light-bg);
+            padding: 1.8rem;
+            border-radius: 8px;
+            border-top: 4px solid var(--gold);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .service h3 {
+            color: var(--dark-blue);
+            margin-bottom: 0.8rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-blue);
+            color: var(--light-text);
+            text-align: center;
+            padding: 2rem 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>M&C Cleaning Services</h1>
+    <p class="tagline">Elevate Your Space</p>
+    <p class="sub-heading">Aylesbury's Premier Trusted Cleaning Experts</p>
+
+    <!-- ✅ FIXED PATH - same folder as your HTML file -->
+    <img 
+        src="cleaning.jpg" 
+        alt="M&C Cleaning Services professional cleaning" 
+        class="hero-image"
+    >
+
+    <a href="tel:07770167143" class="btn">Call Us Today</a>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>
+        At M&C Cleaning Services, we provide professional, reliable and high-quality cleaning solutions for homes and businesses across Aylesbury and the surrounding areas. Our goal is simple: deliver spotless results and exceptional customer service every time.
+    </p>
+</section>
+
+<section>
+    <h2>Our Premium Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Residential Cleaning</h3>
+            <p>A spotless home, a happier you.</p>
+        </div>
+        <div class="service">
+            <h3>Commercial Cleaning</h3>
+            <p>Clean spaces. Productive places.</p>
+        </div>
+        <div class="service">
+            <h3>Deep Cleaning</h3>
+            <p>Every detail. Every time.</p>
+        </div>
+        <div class="service">
+            <h3>Move-In / Move-Out Cleaning</h3>
+            <p>We clean so you can focus on moving.</p>
+        </div>
+        <div class="service">
+            <h3>End of Tenancy Cleaning</h3>
+            <p>Helping you get your deposit back.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+   <!-- ✅ Both phone numbers added as clickable links -->
+    <a href="tel:07770167143" class="btn">📞 Call: 07770 167143</a>
+    <a href="https://wa.me/447466041874" class="btn">💬 WhatsApp: 07466 041874</a>
+    <p style="margin-top:0.8rem;">© 2026 M&C Cleaning Services. Fully Insured & 100% Satisfaction Guaranteed.</p>
+</footer>
+
+</body>
+</html>
